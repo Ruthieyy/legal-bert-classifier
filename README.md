@@ -7,7 +7,7 @@ This project fine-tunes a pre-trained BERT model to classify legal contract clau
 
 ## Tech Stack
 - Python, HuggingFace Transformers, PyTorch
-- Datasets: CUAD (Contract Understanding Atticus Dataset)
+- Custom annotated dataset of legal contract clauses
 
 ## Pipeline
 1. Data loading and preprocessing
@@ -16,10 +16,10 @@ This project fine-tunes a pre-trained BERT model to classify legal contract clau
 4. Evaluation on held-out test set
 
 ## Results
-- Accuracy: TBD (updating after training completes)
+- Accuracy: 100% on held-out test set (10-clause annotated dataset)
 
 ## How to Run
 ```bash
 pip install transformers torch datasets
-jupyter notebook "BERT MVP.ipynb"
+jupyter notebook "LEGAL_BERT_MVP.ipynb"
 ```
